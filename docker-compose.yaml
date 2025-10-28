@@ -1,0 +1,10 @@
+services:
+  postgres:
+    container_name: hono-todo-postgres
+    image: postgres:17.5
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=user
+      - POSTGRES_DB=todos
